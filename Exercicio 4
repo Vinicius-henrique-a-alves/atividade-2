@@ -1,0 +1,11 @@
+<?php
+function exercicioFour ($f) {
+    if ($f == 0) return 0;
+    elseif ($f == 1) return 1;
+    else return exercicioFour ($f - 1) + exercicioFour ($f -2);
+}
+    echo "Fibonacci (10 primeiros números):";
+    for ($i = 1 ; $i <=10 ; $i++) {
+        echo exercicioFour($i) . " ";
+    }
+    ?>
