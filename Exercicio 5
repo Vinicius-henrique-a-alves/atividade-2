@@ -1,0 +1,25 @@
+<?php
+$numero = rand(1, 100);
+
+while (true) {
+    $chute = readline("digite um número:");
+
+    if(!is_numeric($chute)) or $chute < 1 or $chute > 100) {
+        echo "o numero não é permitido";
+    }
+
+    if ($chute < $numero) {
+        echo "tente um número maior";
+    }
+
+
+    elseif ($chute > $numero){
+        echo "tente um número maior";
+    }
+    
+    else {
+        echo "Boa irmão, você é um ACERTADOR!!";
+        break;
+    }
+} 
+?>
