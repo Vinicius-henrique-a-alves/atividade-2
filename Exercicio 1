@@ -1,0 +1,13 @@
+<?php
+function ExercicioOne ($exercicio1) {
+        if ($exercicio1 > 0) {
+            for ($i = 1; $i <=10 ; $i++) {
+                $resposta = $exercicio1 * $i;
+                echo "$exercicio1 x $i = $resposta <br>";
+            }
+        }   
+    }
+$exercicio1 = 1;
+
+exercicioOne($exercicio1);
+?>
