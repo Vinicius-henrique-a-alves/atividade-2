@@ -1,0 +1,14 @@
+<?php
+function calcularIMC($peso, $altura)
+{
+    $imc = $peso / ($altura * $altura);
+
+    return $imc;
+}
+
+$peso = 62;
+$altura = 1.70;
+$imc = calcularIMC($peso, $altura);
+
+echo "Seu IMC é: $imc";
+?>
