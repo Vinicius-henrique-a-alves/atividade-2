@@ -1,0 +1,19 @@
+<php
+function ordenacaobubblesort(&$array) {
+    $n = count($array);
+    for ($i = 0; $i < $n; $i++) {
+        for ($j = 0; $j < $n - $i - 1; $j++) {
+            if ($array[$j] > $array[$j + 1]) {
+                $temp = $array[$j];
+                $array[$j] = $array[$j +1];
+                $array[$j + 1] = $temp;
+            }
+        }
+    }
+}
+
+$array = [7, 38, 26, 19, 80, 43, 16, 50, 20, 100, 2];
+ordenacaobubblesort($array);
+echo "Array ordenacao: ";
+print_r($array)
+?>
